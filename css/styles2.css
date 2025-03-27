@@ -28,7 +28,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../images/Fondo.png") top right no-repeat;
+  background: #040404 url("../images/1.png") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -386,6 +386,8 @@ section .container {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+
+
 
 
 
