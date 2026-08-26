@@ -1,0 +1,92 @@
+.world-container {
+   position: relative;
+}
+.img-base {
+    width: 100%;
+}
+.maintenance-layer {
+    position: absolute;
+    top: 58%;
+    left: 35%;
+}
+.img-maintBoard {
+    width: 100%;
+}
+.maintenance-content {
+    position:relative;
+    width: 25%;
+}
+.maintenance-title {
+    font-family: "Bree Serif", serif;
+    color:  #210f38;
+    font-style: normal;
+    position: absolute;
+    font-weight: 400;
+    top: 17%;
+    left: 34%;
+    font-size: .8vw;
+    transform: rotate(4deg);
+}
+.maintenance-text { 
+    font-family: "Merienda", cursive;
+    font-weight: 10;
+    font-style: normal;
+    position: absolute;
+    top: 28%;
+    left: 30%;
+    width: 45%;
+    font-size: .4vw;
+    transform: rotate(4deg);
+}
+.maintenance-actions {
+    position: absolute;
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    top: 50%;
+    left: 39%;
+    gap: 10px;
+    font-size: .3vw;   
+    transform: rotate(4deg);  
+}
+
+.maintenance-button {
+     pointer-events: auto;
+    display: flex;
+    text-decoration: none;
+    background-color: #192157;
+    color: white;
+    padding: 4px 4px;
+    border-radius: 10%;
+    width: 50%;
+    align-items: center;
+   
+}
+
+.maintenance-button:hover {
+   box-shadow: 0 0 10px #7a4029;
+   transition: 0.2s;
+}
+
+.button-icon {
+    width: 15px;
+}
+
+.builders-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.img-builders {
+    position: absolute;
+    width: 13%;
+    top: 54%;
+    left: 70%;
+    transform: rotate(-10deg);  
+}
