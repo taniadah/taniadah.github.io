@@ -90,3 +90,23 @@
     left: 70%;
     transform: rotate(-10deg);  
 }
+.tree-layer{
+    position: absolute;
+    top: 49%;
+    left: 48%;
+}
+.img-tree{    
+    width: 10%;
+    /*transform: rotate(-1deg);  */
+
+}
+.workshop-layer{
+    position: absolute;
+    top: 53%;
+    left: 53%;
+}
+.img-workshop{    
+    width: 50%;
+    /*transform: rotate(-1deg);  */
+
+}
