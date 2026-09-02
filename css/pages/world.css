@@ -1,8 +1,32 @@
-.world-container {
-   position: relative;
-}
-.img-base {
+html,
+body {
+    margin: 0;
+    padding: 0;
     width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+.world-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.world-layer {
+    width: 100%;
+    height: 100%;
+}
+
+.img-base {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .maintenance-layer {
     position: absolute;
@@ -13,7 +37,7 @@
     width: 100%;
 }
 .maintenance-content {
-    position:relative;
+    position: relative;
     width: 25%;
 }
 .maintenance-title {
@@ -53,7 +77,7 @@
 }
 
 .maintenance-button {
-     pointer-events: auto;
+    pointer-events: auto;
     display: flex;
     text-decoration: none;
     background-color: #192157;
@@ -62,6 +86,8 @@
     border-radius: 10%;
     width: 50%;
     align-items: center;
+    font-family: "Quicksand", sans-serif;
+
    
 }
 
@@ -92,21 +118,21 @@
 }
 .tree-layer{
     position: absolute;
-    top: 49%;
-    left: 48%;
+    top: 47%;
+    left: 44%;
 }
 .img-tree{    
-    width: 10%;
+    width: 20%;
     /*transform: rotate(-1deg);  */
 
 }
 .workshop-layer{
     position: absolute;
-    top: 53%;
-    left: 53%;
+    top: 72%;
+    left: 63%;
 }
 .img-workshop{    
-    width: 50%;
-    /*transform: rotate(-1deg);  */
+    width: 38%;
+   
 
 }
