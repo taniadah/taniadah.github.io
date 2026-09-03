@@ -40,8 +40,8 @@ body {
     position: relative;
     width: 25%;
 }
-.maintenance-title {
-    font-family: "Bree Serif", serif;
+.maintenance-title {   
+    font-family: "Amaranth", sans-serif;
     color:  #210f38;
     font-style: normal;
     position: absolute;
@@ -52,8 +52,9 @@ body {
     transform: rotate(4deg);
 }
 .maintenance-text { 
-    font-family: "Merienda", cursive;
-    font-weight: 10;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:300;
     font-style: normal;
     position: absolute;
     top: 28%;
@@ -65,14 +66,10 @@ body {
 .maintenance-actions {
     position: absolute;
     display: flex;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 400;
     top: 50%;
     left: 39%;
     gap: 10px;
-    font-size: .3vw;   
+    font-size: .4vw;   
     transform: rotate(4deg);  
 }
 
@@ -86,9 +83,7 @@ body {
     border-radius: 10%;
     width: 50%;
     align-items: center;
-    font-family: "Quicksand", sans-serif;
-
-   
+    font-family: "Viga", sans-serif;   
 }
 
 .maintenance-button:hover {
@@ -111,9 +106,9 @@ body {
 
 .img-builders {
     position: absolute;
-    width: 13%;
-    top: 54%;
-    left: 70%;
+    width: 7%;
+    top: 70%;
+    left: 57%;
     transform: rotate(-10deg);  
 }
 .tree-layer{
@@ -123,8 +118,6 @@ body {
 }
 .img-tree{    
     width: 20%;
-    /*transform: rotate(-1deg);  */
-
 }
 .workshop-layer{
     position: absolute;
@@ -133,6 +126,4 @@ body {
 }
 .img-workshop{    
     width: 38%;
-   
-
 }

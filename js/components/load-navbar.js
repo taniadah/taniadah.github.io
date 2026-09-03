@@ -5,10 +5,14 @@ fetch("html/components/navbar.html")
         container.innerHTML = navbarHTML;
 
         const navbar = document.getElementById("navbar");
-        const trigger = document.querySelector(".navbar-trigger");
-
+        const trigger = document.querySelector(".navbar-trigger");       
         trigger.addEventListener("click", () => {           
-            navbar.classList.toggle("open");            
+            const x = navbar.classList.toggle("open");    
+            if(x){
+                trigger.title = 'Cerrar menú';
+            }else{
+                trigger.title = 'Abrir menú';
+            }   
         });
     }
 );
