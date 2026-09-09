@@ -1,4 +1,7 @@
-fetch("/html/components/navbar.html")
+const navbarPath = window.location.pathname.includes("/html/pages/")
+    ? "../../html/components/navbar.html"
+    : "html/components/navbar.html";
+fetch(navbarPath)
     .then(response => response.text())
     .then(navbarHTML => {
         const container = document.getElementById("navbar-container");
@@ -16,3 +19,4 @@ fetch("/html/components/navbar.html")
         });
     }
 );
+
