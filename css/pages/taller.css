@@ -1,0 +1,193 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+.workshop-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.workshop-background {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease, filter 0.6s ease;
+
+}
+
+.workshop-base {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.workshop-header {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    align-items: center;
+}
+.workshop-title-box {
+    font-family: "Bitcount Grid Double", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 13px;
+    font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+    color: #fde8b7;   
+    margin: 0 -10 -10 0;
+    position: relative;
+    width: 100%;
+    padding: 1px 30px;
+    box-sizing: border-box;
+    background-image: url("../../assets/textures/table_back1.png");
+    background-size: 100% 100%;
+}
+.workshop-subtitle-box {
+    font-family: "Amaranth", sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    width: 260px;
+    padding: 1px 15px;
+    box-sizing: border-box;
+    background-image: url("../../assets/textures/sub_back2.png");
+    background-size: 100% 100%;
+    margin-top: -4px;
+}
+.title-icon{
+    width: 15%;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+}
+.workshop-trajectory {
+    position: absolute;
+    top: 13%;
+    left: 29%;
+    width: 26%;
+}
+.trajectory-board {
+    width: 100%;
+    display: block;
+}
+.trajectory-companies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.trajectory-company {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trajectory-title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 4px 18px;
+    background-image: url("../../assets/textures/table_back2.png");
+    background-size: 100% 100%;
+    font-family: "Amaranth", sans-serif;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.company-name {
+    font-family: "Amaranth", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+}
+
+.company-period {
+    margin: 3px 0 0;
+    font-family: "Outfit", sans-serif;   
+    font-size: 12px;
+}
+
+.trajectory-company:first-child {
+    top: 30%;
+    left: 8%;
+    width: 30%;
+}
+.trajectory-company:nth-child(2) {
+    top: 30%;
+    left: 55%;
+}
+.company-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.trajectory-arrow {
+    position: absolute;
+    top: 39%;
+    left: 42%;
+    font-size: 30px;
+}
+
+.zooming .workshop-background {
+    transform: scale(1.15);
+     filter: blur(3px);
+}
+
+.zooming .workshop-trajectory {
+    visibility: hidden;
+}
+
+
+
+.experience-view {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+}
+
+.experience-header {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.experience-card {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-card-image {
+    height: 88vh;
+    width: auto;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.experience-view.visible .experience-card-image {
+    opacity: 1;
+    transform: scale(1);
+}

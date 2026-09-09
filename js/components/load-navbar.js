@@ -1,4 +1,4 @@
-fetch("html/components/navbar.html")
+fetch("/html/components/navbar.html")
     .then(response => response.text())
     .then(navbarHTML => {
         const container = document.getElementById("navbar-container");
