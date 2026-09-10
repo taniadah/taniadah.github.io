@@ -145,7 +145,13 @@ body {
     left: 42%;
     font-size: 30px;
 }
+/* ============================================================================
+ZOOMING EXPERIENCE CONTENT
+=============================================================================== */
 
+/* ==============================
+   ZOOMING
+============================== */
 .zooming .workshop-background {
     transform: scale(1.15);
      filter: blur(3px);
@@ -155,14 +161,14 @@ body {
     visibility: hidden;
 }
 
-
-
+/* ==============================
+   EXPERIENCE
+============================== */
 .experience-view {
     position: absolute;
     inset: 0;
     z-index: 20;
 }
-
 .experience-header {
     position: absolute;
     top: 10%;
@@ -170,7 +176,6 @@ body {
     transform: translateX(-50%);
     text-align: center;
 }
-
 .experience-card {
     position: absolute;
     inset: 0;
@@ -179,15 +184,272 @@ body {
     justify-content: center;
 }
 
-.experience-card-image {
-    height: 88vh;
-    width: auto;
+/* ==============================
+   PAGINATION
+============================== */
+.experience-pagination {
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    z-index: 50;
+}
+.pagination-button {
+    border: none;
+    background: none;
+    font-family: "Amaranth", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+.pagination-dots {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pagination-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #8b7763;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.pagination-dot.active {
+    transform: scale(1.4);
+}
+
+/* ==============================
+   EXPERIENCE CARD
+============================== */
+.experience-card {   
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     transform: scale(0.9);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
-.experience-view.visible .experience-card-image {
+.experience-view.visible .experience-card {
     opacity: 1;
     transform: scale(1);
+}
+.experience-card-image {
+    position: absolute;   
+    height: 88vh;
+    width: auto;
+    object-fit: fill;   
+}
+
+/* ==============================
+   TIMELINE
+============================== */
+.experience-timeline {
+    position: absolute;
+    top: 24%;
+    left: 34%;
+    width: 9%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.timeline-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.timeline-node {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.timeline-node img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.timeline-info {
+    text-align: left;
+}
+
+.timeline-info h3 {
+    margin: 0;
+    font-family: "Amaranth", sans-serif;
+    font-size: 12px;
+    color: #192157;
+}
+
+.timeline-info p {
+    margin: 2px 0 0;
+    font-family: "Outfit", sans-serif;
+    font-size: 10px;
+}
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+.experience-content {
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    width: 25%;
+    height: 65%;
+}
+.experience-scroll{
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+.experience-info {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    left: 22px;
+    top: 45px;
+
+    width: 2px;
+    height: 35px;
+
+    background: #6b5745;
+
+    z-index: 1;
+}
+
+/* ==============================
+   COMPANY HEADER
+============================== */
+.company-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 13px;
+}
+.company-iconcard {
+    position: static;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.company-info-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Bitcount Grid Double", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+    color:  #192157;
+}
+.company-infoname {
+    margin: 0;
+}
+.company-infoperiod {
+    margin: 2px 0 0;    
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: normal;
+    color: #192157;
+}
+
+/* ==============================
+   SECTION TITLES
+============================== */
+.info-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Viga", sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+    font-style: normal;
+    color:  #192157;
+
+}
+.subtitle-icon {
+    position: static;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+.subtitle {
+    margin: 0;
+}
+
+/* ==============================
+   CONTENT
+   ============================== */
+.content-info {
+    margin: 6px 0 0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: normal;
+
+}
+
+
+.role-title {
+    margin: 8px 0 4px;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1B2662;
+}
+.activities-list {
+    margin: 0 0 8px;
+    padding-left: 20px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: normal;
+}
+.role-block {
+    margin-bottom: 4px;
+}
+.role-info{
+    margin-top: 0;
+}
+.roles-content {
+    margin-top: 4px;
 }

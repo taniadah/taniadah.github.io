@@ -1,10 +1,99 @@
 {
     "rica": {
         "company": "Grupo RICA",
-        "status": "Experiencia"
+        "position": 1,
+        "period": "2023 - 2025",
+        "status": "Experiencia",
+        "about": "Uno de los 8 embotelladores de la industria Mexicana de Coca-Cola, con presencia en los estados de Hidalgo, Morelos y parte de Puebla",
+        "roles": [            
+            {
+                "title":"Especialista en Desarrollo Jr.",
+                "activities":[
+                    "Desarrollo de aplicación de preventa en Xamarin, C#, mejorando la eficiencia del equipo comercial",
+                    "Utilización de Visualforce Pages y Apex para la generación de PDFs y envío correos automáticos",
+                    "Implementación de aplicaciones conectadas con Salesforce y creación de webservices via api.",
+                    "Optimización de la plataforma MDM de la Fundación Doña Margarita para la gestión de cursos impartidos y seguimiento de alumnas."
+                ]
+            },
+            {
+                "title":"Especialista en Desarrollo Sr.",
+                "activities":[
+                    "Desarrollo de plataforma web para la evaluación de empleados e incrementos salariales (HTML, CSS, JS).",
+                    "Desarrollo mobile en Xamarin para la optimización y mantenimiento de aplicaciones para operaciones de reparto y autoventa.",
+                    "Depuración de código en Salesforce mejorando la eficiencia de procesos internos."
+                ]
+            },
+            {
+                "title":"Jefe de Desarrollo TI",
+                "activities":[
+                    "Liderazgo en la gestión y desarrollo de proyectos tecnológicos.",
+                    "Creación de apps móviles en Xamarin y C# integradas con Salesforce mediante API.",
+                    "Desarrollo en Salesforce: configuración de objetos, perfiles, permisos y reglas de validación, aplicaciones conectadas, creación de campos, recursos estáticos.",
+                    "Implementación de una app para la gestión de visitas de proveedores y personal.",
+                    "Migración de bases de datos de MySQL a SQL Server, optimizando el rendimiento en un 20%.",
+                    "Participación activa en la migración de SAP, con conocimientos básicos de la plataforma.",
+                    "Actualización de arquitectura de software en servidores Windows Server para fortalecer la ciberseguridad, incluyendo mitigación de vulnerabilidades como SQL Injection y actualización de versiones."
+                ]
+            }
+        ],
+        "technologies": [
+            "Salesforce",
+            "Apex",
+            "SOQL",
+            "Xamarin",
+            "SQLite",
+            "C#",
+            "SQL Server",
+            "MySQL",
+            "PHP",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Windows Server",
+            "VS Code",
+            "Git"
+        ],
+        "learning": "He fortalecido mi pensamiento analítico, mi capacidad para trabajar en equipo y mi confianza para desenvolverme en público. Aquí aprendí que construir soluciones tecnológicas también implica ser empáticos con quienes las utilizan. Me llevo en el corazón lo mejor de las personas que conocí en el camino: su ayuda, sus enseñanzas y todo aquello que hizo especial esta etapa."
     },
     "bluetab": {
         "company": "Bluetab an IBM Company",
-        "status": "Experiencia"
+        "position": 2,
+        "period": "2025 - presente",
+        "status": "Experiencia",
+        "about": "Firma de consultoría y servicios de TI especializada en estrategia de datos, análisis en la nube, *big data* y preparación para la IA generativa.",
+        "roles": [            
+            {
+                "title":"Technician 2",
+                "activities":[
+                    "Ejecución y validación de pruebas unitarias, de integración, de aceptación y de no afectación, garantizando el correcto funcionamiento y estabilidad de las soluciones desarrolladas.",
+                    "Creación, optimización y mantenimiento de clases Apex, contribuyendo a la mejora del rendimiento y funcionalidad de las soluciones.",                    
+                    "Optimización y mantenimiento de Flows en Salesforce para mejorar y automatizar procesos.",
+                    "Mantenimiento y actualización de componentes LWC y Aura, realizando ajustes y mejoras funcionales.",
+                    "Gestión de procesos de CI/CD para Salesforce mediante Bitbucket y Git.",
+                    "Configuración y administración de perfiles, permisos y accesos en Salesforce.",
+                    "Configuración y gestión de Salesforce Territories para la administración y segmentación de usuarios y operaciones.",
+                    "Configuración y administración de paquetes y soluciones de terceros, incluyendo Salesforce Maps.",
+                    "Configuración básica y mantenimiento de integraciones entre Salesforce y Genesys.","Participación en actividades de mantenimiento, configuración y soporte de ambientes Salesforce."
+                ]
+            }
+        ],
+        "technologies": [
+            "Salesforce",
+            "Apex",
+            "SOQL",
+            "Xamarin",
+            "SQLite",
+            "C#",
+            "SQL Server",
+            "MySQL",
+            "PHP",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Windows Server",
+            "VS Code",
+            "Git"
+        ],
+        "learning": "He fortalecido mi pensamiento analítico, mi capacidad para trabajar en equipo y mi confianza para desenvolverme en público. Aquí aprendí que construir soluciones tecnológicas también implica ser empáticos con quienes las utilizan. Me llevo en el corazón lo mejor de las personas que conocí en el camino: su ayuda, sus enseñanzas y todo aquello que hizo especial esta etapa."
     }
 }

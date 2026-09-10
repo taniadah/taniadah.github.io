@@ -46,13 +46,60 @@
             <div class="experience-view" hidden>
                 <div class="experience-card">
                     <img src="../../assets/images/TallerModule/exp_card.png" class="experience-card-image">
-                    <div class="experience-content">
-                        
+                    <div class="experience-timeline"></div>
+                    <div class="experience-content">                    
+                        <div class="experience-info">
+                            <div class="company-info">
+                                <img  class="company-iconcard">
+                                <div class="company-info-text">
+                                    <h1 class="company-infoname"></h1>
+                                    <p class="company-infoperiod"></p>
+                                </div>                               
+                            </div>  
+                            <div class="experience-scroll" >
+                                <div class="company-about">
+                                    <div class="info-subtitle">
+                                        <img src="../../assets/icons/about_icon.png" class="subtitle-icon">
+                                        <h3 class="subtitle">Sobre la empresa</h3>                                                        
+                                    </div>
+                                    <p id="about-content" class="content-info"></p>
+                                </div>   
+                                <div class="rol-info">
+                                    <div class="info-subtitle">
+                                        <img src="../../assets/icons/myrole_icon.png" class="subtitle-icon">
+                                        <h3 class="subtitle">Mi rol</h3>                                                      
+                                    </div>
+                                    <div class="roles-content"></div>
+                                </div>                                                
+                                <div class="tecnologies-info">
+                                    <div class="info-subtitle">
+                                        <img src="../../assets/icons/tecs_icon.png" class="subtitle-icon">
+                                        <h3 class="subtitle">Tecnologías</h3>                                                        
+                                    </div>
+                                    <p id="tecnologies-content" class="content-info"></p>
+                                </div>
+                                <div class="learning-info">
+                                    <div class="info-subtitle">
+                                        <img src="../../assets/icons/grown_icon.png" class="subtitle-icon">
+                                        <h3 class="subtitle">Lo que me lleve</h3>                                                        
+                                    </div>
+                                    <p id="learning-content" class="content-info"></p>
+                                </div>     
+                            </div>                        
+                        </div>                                 
                     </div>
+                    <div class="experience-pagination">
+                        <button class="pagination-button" id="previous-experience">‹</button>
+                        <div class="pagination-dots">
+                            <button class="pagination-dot active"></button>
+                            <button class="pagination-dot"></button>
+                        </div>
+                        <button class="pagination-button" id="next-experience">›</button>
+                    </div>          
                 </div>
             </div>
         </div>
         <script src="../../js/components/load-navbar.js"></script>
-        <script src="../../js/pages/taller.js"></script>
+        <script type="module" src="../../js/pages/taller.js"></script>
     </body>
 </html>
