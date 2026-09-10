@@ -13,15 +13,16 @@ const aboutContent = document.getElementById("about-content");
 const grownContent = document.getElementById("learning-content");
 const rolesContent = document.querySelector(".roles-content");
 const timeline = document.querySelector(".experience-timeline");
+const workshop = document.querySelector(".workshop-container");
 
 fetch("../../data/experiences.json")
     .then(response => response.json())
-    .then(experiences => {
-        console.log(experiences);
+    .then(experiences => {       
         buildTimeline(experiences);
         companies.forEach(company => {
             company.addEventListener("click", () => {               
                 const companyData = experiences[company.dataset.company];                
+                workshop.classList.add("zooming");
                 experienceView.hidden = false;
                 setTimeout(() => {
                     experienceView.classList.add("visible");
