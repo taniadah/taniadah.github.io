@@ -30,6 +30,7 @@ const workshop = document.querySelector(".workshop-container");
 const technologiesContent = document.getElementById("tecnologies-content");
 const technologyPrevious = document.getElementById("technology-previous");
 const technologyNext = document.getElementById("technology-next");
+const experienceBack = document.getElementById("experience-back");
 let currentTechnologyPage = 0;
 let technologyPages = [];
 
@@ -80,20 +81,26 @@ technologyNext.addEventListener("click", () => {
 });
 
 setInterval(() => {
-
     if (technologyPages.length <= 1) {
         return;
     }
-
     currentTechnologyPage++;
-
     if (currentTechnologyPage >= technologyPages.length) {
         currentTechnologyPage = 0;
     }
-
     showTechnologyPage();
-
 }, 4000);
+
+experienceBack.addEventListener("click", () => {
+
+    experienceView.classList.remove("visible");
+
+    workshop.classList.remove("zooming");
+
+    setTimeout(() => {
+        experienceView.hidden = true;
+    }, 500);
+});
 
 /**
  * Actualiza la tarjeta de experiencia con la información
@@ -127,38 +134,6 @@ function fillExperience(companyData, compName) {
     });
    // buildTechnologies(companyData.technologies);
    buildTechnologyPages(companyData.technologies);
-}
-/**
- * Construye el carrusel de tecnologías de la experiencia seleccionada.
- *
- * @param {string[]} technologies - Lista de tecnologías de la experiencia.
- * @returns {void}
- */
-function buildTechnologies(technologies) {
-
-    technologiesContent.innerHTML = "";
-
-    technologies.forEach(technology => {
-
-        const icon = TECHNOLOGY_ICONS.get(technology);
-
-        if (!icon) {
-            return;
-        }
-
-        const technologyItem = document.createElement("div");
-        technologyItem.classList.add("technology-item");
-
-        technologyItem.innerHTML = `
-            <img
-                src="${icon}"
-                alt="${technology}"
-                class="technology-icon"
-            >
-        `;
-
-        technologiesContent.appendChild(technologyItem);
-    });
 }
 /**
  * Divide las tecnologías de una experiencia en grupos

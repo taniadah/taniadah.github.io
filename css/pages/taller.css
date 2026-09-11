@@ -471,8 +471,6 @@ ZOOMING EXPERIENCE CONTENT
     width: 280px;
     overflow: hidden;
 }
-
-
 .technology-item {
     width: 60px;
     height: 60px;
@@ -498,4 +496,38 @@ ZOOMING EXPERIENCE CONTENT
     cursor: pointer;
 
     padding: 0 3px;
+}
+
+/* ==============================
+   Tecnologies carrusel
+============================== */
+.experience-back {
+    position: absolute;
+    top: 14%;
+    left: 34%;
+    width: 80px;
+    height: 70px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url("../../assets/icons/ada_back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 30;
+    transition: transform 0.2s ease;
+}
+.experience-back:hover {
+    transform: scale(1.05);
+}
+
+.experience-back:focus {
+    outline: none;
+}
+
+.experience-back:focus-visible {
+    outline: 2px solid #1B2662;
+    outline-offset: 3px;
 }
