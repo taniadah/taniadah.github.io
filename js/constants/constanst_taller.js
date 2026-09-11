@@ -1,3 +1,14 @@
+/**
+ * Constantes y configuraciones utilizadas por el módulo "El Taller".
+ *
+ * Contiene:
+ * - Configuración del carrusel de tecnologías.
+ * - Mapeo de empresas e iconos.
+ * - Mapeo de tecnologías e iconos.
+ *
+ * @file constanst_taller.js
+ * @author Tania Del Angel
+ */
 export const TECHNOLOGIES_PER_PAGE = 4;
 export const COMPANIES_ICONS = new Map([
   ["rica", "../../assets/icons/coca_icon.png"],

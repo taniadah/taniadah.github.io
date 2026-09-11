@@ -1,3 +1,9 @@
+/**
+ * Archivo de carga de navbar
+ *
+ * @file load-navbar.js
+ * @author Tania
+ */
 const navbarPath = window.location.pathname.includes("/html/pages/")
     ? "../../html/components/navbar.html"
     : "html/components/navbar.html";
