@@ -31,12 +31,20 @@ const technologiesContent = document.getElementById("tecnologies-content");
 const technologyPrevious = document.getElementById("technology-previous");
 const technologyNext = document.getElementById("technology-next");
 const experienceBack = document.getElementById("experience-back");
+const previousExperience = document.getElementById("previous-experience");
+const nextExperience = document.getElementById("next-experience");
+const paginationCurrent = document.getElementById("pagination-current");
 let currentTechnologyPage = 0;
 let technologyPages = [];
+let currentExperienceIndex = 0;
+let experienceKeys = [];
+let experiencesData = {};
 
 fetch("../../data/experiences.json")
     .then(response => response.json())
     .then(experiences => {       
+        experiencesData = experiences;
+        experienceKeys = Object.keys(experiences);
         buildTimeline(experiences);
         companies.forEach(company => {
             company.addEventListener("click", () => {                                       
@@ -70,7 +78,35 @@ technologyNext.addEventListener("click", () => {
     }
     showTechnologyPage();
 });
+previousExperience.addEventListener("click", () => {
+    if (experienceKeys.length === 0) {
+        return;
+    }
+    currentExperienceIndex--;
+    if (currentExperienceIndex < 0) {
+        currentExperienceIndex = experienceKeys.length - 1;
+    }
+    selectExperience(
+        experienceKeys[currentExperienceIndex],
+        experiencesData
+    );
+});
+nextExperience.addEventListener("click", () => {
+    if (experienceKeys.length === 0) {
+        return;
+    }
 
+    currentExperienceIndex++;
+
+    if (currentExperienceIndex >= experienceKeys.length) {
+        currentExperienceIndex = 0;
+    }
+
+    selectExperience(
+        experienceKeys[currentExperienceIndex],
+        experiencesData
+    );
+});
 setInterval(() => {
     if (technologyPages.length <= 1) {
         return;
@@ -89,7 +125,6 @@ experienceBack.addEventListener("click", () => {
         experienceView.hidden = true;
     }, 500);
 });
-
 /**
  * Actualiza la tarjeta de experiencia con la información
  * correspondiente a la empresa seleccionada.
@@ -98,8 +133,7 @@ experienceBack.addEventListener("click", () => {
  * @param {string} compName - Identificador de la empresa.
  * @returns {void}
  */
-function fillExperience(companyData, compName) {
-    console.log(companyData)
+function fillExperience(companyData, compName) {  
     companyName.textContent = companyData.company;
     companyPeriod.textContent = companyData.period;
     aboutContent.textContent = companyData.about;
@@ -153,27 +187,18 @@ function buildTechnologyPages(technologies) {
  * @returns {void}
  */
 function showTechnologyPage() {
-
     technologiesContent.innerHTML = "";
-
     const currentPage = technologyPages[currentTechnologyPage];
-
     if (!currentPage) {
         return;
     }
-
     currentPage.forEach(technology => {
-
         const icon = TECHNOLOGY_ICONS.get(technology);
-
         if (!icon) {
             return;
         }
-
         const technologyItem = document.createElement("div");
-
         technologyItem.classList.add("technology-item");
-
         technologyItem.innerHTML = `
             <img
                 src="${icon}"
@@ -181,7 +206,6 @@ function showTechnologyPage() {
                 class="technology-icon"
             >
         `;
-
         technologiesContent.appendChild(technologyItem);
     });
 }
@@ -227,8 +251,10 @@ function selectExperience(companyKey, experiences) {
     if (!companyData) {
         return;
     }
+    currentExperienceIndex = experienceKeys.indexOf(companyKey);
     fillExperience(companyData, companyKey);
     highlightTimeline(companyKey);
+    updatePagination(companyData.position);
 }
 
 /**
@@ -246,4 +272,14 @@ function highlightTimeline(companyKey) {
             item.dataset.company === companyKey
         );
     });
+}
+/**
+ * Función para actualizar la información según la paginación
+ *
+ * @param none
+ * @returns {void}
+ */
+function updatePagination(position) {
+    paginationCurrent.textContent =
+        `${position}/${experienceKeys.length}`;
 }

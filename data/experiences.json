@@ -63,7 +63,7 @@
         "about": "Firma de consultoría y servicios de TI especializada en estrategia de datos, análisis en la nube, *big data* y preparación para la IA generativa.",
         "roles": [            
             {
-                "title":"Technician 2",
+                "title":"Technician 2 (Cliente BBVA México)",
                 "activities":[
                     "Ejecución y validación de pruebas unitarias, de integración, de aceptación y de no afectación, garantizando el correcto funcionamiento y estabilidad de las soluciones desarrolladas.",
                     "Creación, optimización y mantenimiento de clases Apex, contribuyendo a la mejora del rendimiento y funcionalidad de las soluciones.",                    
@@ -80,20 +80,15 @@
         "technologies": [
             "Salesforce",
             "Apex",
-            "SOQL",
-            "Xamarin",
-            "SQLite",
-            "C#",
-            "SQL Server",
-            "MySQL",
-            "PHP",
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Windows Server",
+            "SOQL",                       
+            "SalesforceCLI",
+            "Aura",
+            "LWC",
+            "Flows",
+            "Jira",
             "VS Code",
             "Git"
         ],
-        "learning": "He fortalecido mi pensamiento analítico, mi capacidad para trabajar en equipo y mi confianza para desenvolverme en público. Aquí aprendí que construir soluciones tecnológicas también implica ser empáticos con quienes las utilizan. Me llevo en el corazón lo mejor de las personas que conocí en el camino: su ayuda, sus enseñanzas y todo aquello que hizo especial esta etapa."
+        "learning": "Ha sido una muy buena experiencia. He aprendido sobre el balance entre el trabajo y la vida personal, y he podido vivir de cerca el #nonconformistspirit. También me ha sorprendido mucho la cultura de Bluetab; es una empresa en la que disfruto mucho trabajar. En el ámbito profesional, he aprendido mejores prácticas de desarrollo, documentación, identificación de code smells y, sobre todo, a ser más organizada en mi forma de desarrollar. Sin duda, ha sido una nueva experiencia en muchos sentidos y una etapa de mucho aprendizaje."
     }
 }

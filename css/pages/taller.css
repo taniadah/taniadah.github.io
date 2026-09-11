@@ -209,23 +209,10 @@ ZOOMING EXPERIENCE CONTENT
     cursor: pointer;
     padding: 2px 5px;
 }
-.pagination-dots {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.pagination-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #8b7763;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.pagination-dot.active {
-    transform: scale(1.4);
+.pagination-current{
+    font-family: "Amaranth", sans-serif;
+    font-size: 15px;
+    padding: 2px 5px;
 }
 
 /* ==============================
