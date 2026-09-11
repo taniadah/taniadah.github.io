@@ -39,44 +39,35 @@ fetch("../../data/experiences.json")
     .then(experiences => {       
         buildTimeline(experiences);
         companies.forEach(company => {
-            company.addEventListener("click", () => {               
-                const companyData = experiences[company.dataset.company];                
+            company.addEventListener("click", () => {                                       
                 workshop.classList.add("zooming");
                 experienceView.hidden = false;
                 setTimeout(() => {
                     experienceView.classList.add("visible");
                 }, 300)
-                fillExperience(companyData,company.dataset.company);
+                  selectExperience(company.dataset.company, experiences);
             });
         });
     });
 
 technologyPrevious.addEventListener("click", () => {
-
     if (technologyPages.length === 0) {
         return;
     }
-
     currentTechnologyPage--;
-
     if (currentTechnologyPage < 0) {
         currentTechnologyPage = technologyPages.length - 1;
     }
-
     showTechnologyPage();
 });
 technologyNext.addEventListener("click", () => {
-
     if (technologyPages.length === 0) {
         return;
     }
-
     currentTechnologyPage++;
-
     if (currentTechnologyPage >= technologyPages.length) {
         currentTechnologyPage = 0;
     }
-
     showTechnologyPage();
 });
 
@@ -92,11 +83,8 @@ setInterval(() => {
 }, 4000);
 
 experienceBack.addEventListener("click", () => {
-
     experienceView.classList.remove("visible");
-
     workshop.classList.remove("zooming");
-
     setTimeout(() => {
         experienceView.hidden = true;
     }, 500);
@@ -221,6 +209,41 @@ function buildTimeline(experiences) {
                 <p>${companyData.period}</p>
             </div>
         `;
+        item.addEventListener("click", () => {
+            selectExperience(key, experiences);
+        });
         timeline.appendChild(item);
+    });
+}
+/**
+ * Da funcionalidad a la linea del tiempo.
+ *
+ * @param companyKey - key de la compania
+ * @param experiences - mapa de las experiencias
+ * @returns {void}
+ */
+function selectExperience(companyKey, experiences) {
+    const companyData = experiences[companyKey];
+    if (!companyData) {
+        return;
+    }
+    fillExperience(companyData, companyKey);
+    highlightTimeline(companyKey);
+}
+
+/**
+ * Función que resalta la empresa
+ *
+ * @param companyKey - key de la compania
+ * @returns {void}
+ */
+function highlightTimeline(companyKey) {
+    const timelineItems = document.querySelectorAll(".timeline-item");
+
+    timelineItems.forEach(item => {
+        item.classList.toggle(
+            "active",
+            item.dataset.company === companyKey
+        );
     });
 }

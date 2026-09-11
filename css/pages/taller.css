@@ -273,6 +273,23 @@ ZOOMING EXPERIENCE CONTENT
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.timeline-item:hover {
+    transform: translateX(3px);
+}
+
+.timeline-item.active .timeline-node {
+      filter: drop-shadow(0 0 4px rgba(27, 38, 98, 0.35));
+    transform: scale(1.15);
+}
+
+.timeline-item.active .timeline-info h3 {
+    color:  #1B2662;
+}
+.timeline-item.active .timeline-info p {
+    color:  #000;
 }
 
 .timeline-node {
@@ -300,13 +317,14 @@ ZOOMING EXPERIENCE CONTENT
     margin: 0;
     font-family: "Amaranth", sans-serif;
     font-size: 12px;
-    color: #192157;
+    color: #8b7763;;
 }
 
 .timeline-info p {
     margin: 2px 0 0;
     font-family: "Outfit", sans-serif;
     font-size: 10px;
+    color: #8b7763;;
 }
 
 /* ==============================
