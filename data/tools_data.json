@@ -1,0 +1,337 @@
+{
+    "apex": {
+        "name": "Apex",
+        "category": "technology",
+        "shortDescription": "Lenguaje utilizado para desarrollar lógica personalizada en Salesforce.",
+        "details": {
+            "usage": "He utilizado Apex para desarrollar lógica de negocio personalizada, crear clases, triggers y servicios dentro de Salesforce.",
+            "highlights": [
+                "Desarrollo de lógica personalizada",
+                "Automatización de procesos y validaciones",
+                "Integración con servicios y APIs",
+                "Mantenimiento y optimización de código"
+            ],
+            "note": "Permite transformar necesidades del negocio en soluciones escalables dentro de la plataforma."
+        }
+    },
+
+    "aura": {
+        "name": "Aura",
+        "category": "technology",
+        "shortDescription": "Framework utilizado para desarrollar componentes en Salesforce.",
+        "details": {
+            "usage": "He utilizado Aura Components para crear interfaces y funcionalidades personalizadas dentro de Salesforce.",
+            "highlights": [
+                "Desarrollo de componentes",
+                "Personalización de interfaces",
+                "Manejo de eventos",
+                "Integración con lógica de Salesforce"
+            ],
+            "note": "Fue una de las tecnologías que me permitió entender el desarrollo de interfaces dentro de Salesforce."
+        }
+    },
+
+    "csharp": {
+        "name": "C#",
+        "category": "technology",
+        "shortDescription": "Lenguaje de programación utilizado para desarrollar aplicaciones.",
+        "details": {
+            "usage": "He utilizado C# para desarrollar aplicaciones y trabajar con lógica de programación.",
+            "highlights": [
+                "Desarrollo de aplicaciones",
+                "Programación orientada a objetos",
+                "Manejo de lógica de negocio",
+                "Trabajo con estructuras de datos"
+            ],
+            "note": "Una de las tecnologías que fortaleció mis bases de programación."
+        }
+    },
+
+    "css": {
+        "name": "CSS",
+        "category": "technology",
+        "shortDescription": "Lenguaje utilizado para definir la apariencia y presentación de interfaces web.",
+        "details": {
+            "usage": "He utilizado CSS para construir y personalizar interfaces web, trabajando con layouts, estilos y diseño responsive.",
+            "highlights": [
+                "Diseño de interfaces",
+                "Layouts y posicionamiento",
+                "Diseño responsive",
+                "Animaciones y transiciones"
+            ],
+            "note": "Me permite convertir una estructura funcional en una experiencia visual."
+        }
+    },
+
+    "flows": {
+        "name": "Flows",
+        "category": "technology",
+        "shortDescription": "Herramienta de automatización declarativa de Salesforce.",
+        "details": {
+            "usage": "He utilizado Salesforce Flow para automatizar procesos y reducir tareas manuales dentro de la plataforma.",
+            "highlights": [
+                "Automatización de procesos",
+                "Validaciones",
+                "Actualización de registros",
+                "Lógica declarativa"
+            ],
+            "note": "Me permite resolver necesidades de automatización sin depender siempre de código."
+        }
+    },
+
+    "git": {
+        "name": "Git",
+        "category": "technology",
+        "shortDescription": "Sistema de control de versiones utilizado para gestionar código.",
+        "details": {
+            "usage": "He utilizado Git para controlar versiones, gestionar cambios y colaborar en proyectos de desarrollo.",
+            "highlights": [
+                "Control de versiones",
+                "Creación y gestión de ramas",
+                "Manejo de commits",
+                "Integración de cambios"
+            ],
+            "note": "Es una herramienta fundamental para mantener el historial y evolución de un proyecto."
+        }
+    },
+
+    "html": {
+        "name": "HTML",
+        "category": "technology",
+        "shortDescription": "Lenguaje utilizado para estructurar contenido en aplicaciones web.",
+        "details": {
+            "usage": "He utilizado HTML para estructurar páginas y componentes de interfaces web.",
+            "highlights": [
+                "Estructuración de páginas",
+                "Creación de componentes",
+                "Uso de elementos semánticos",
+                "Integración con CSS y JavaScript"
+            ],
+            "note": "Es la base sobre la que construyo las interfaces web."
+        }
+    },
+
+    "java": {
+        "name": "Java",
+        "category": "technology",
+        "shortDescription": "Lenguaje de programación utilizado para desarrollar aplicaciones.",
+        "details": {
+            "usage": "He utilizado Java para desarrollar aplicaciones y trabajar con conceptos de programación orientada a objetos.",
+            "highlights": [
+                "Programación orientada a objetos",
+                "Desarrollo de aplicaciones",
+                "Manejo de estructuras de datos",
+                "Implementación de lógica"
+            ],
+            "note": "Me ayudó a fortalecer mis fundamentos de programación."
+        }
+    },
+
+    "javascript": {
+        "name": "JavaScript",
+        "category": "technology",
+        "shortDescription": "Lenguaje utilizado para agregar comportamiento e interactividad a aplicaciones web.",
+        "details": {
+            "usage": "He utilizado JavaScript para crear interacciones, manipular elementos y agregar comportamiento dinámico a interfaces web.",
+            "highlights": [
+                "Manipulación del DOM",
+                "Eventos e interacciones",
+                "Lógica de aplicaciones",
+                "Consumo de APIs"
+            ],
+            "note": "Es una de las herramientas principales para convertir interfaces estáticas en experiencias interactivas."
+        }
+    },
+
+    "jira": {
+        "name": "Jira",
+        "category": "technology",
+        "shortDescription": "Herramienta utilizada para gestionar proyectos y trabajo de desarrollo.",
+        "details": {
+            "usage": "He utilizado Jira para organizar tareas, dar seguimiento al trabajo y gestionar actividades dentro de proyectos.",
+            "highlights": [
+                "Gestión de tareas",
+                "Seguimiento de incidencias",
+                "Organización de trabajo",
+                "Seguimiento de proyectos"
+            ],
+            "note": "Me ayuda a mantener visible el progreso y las prioridades de un proyecto."
+        }
+    },
+
+    "lwc": {
+        "name": "LWC",
+        "category": "technology",
+        "shortDescription": "Framework moderno de Salesforce para desarrollar componentes web.",
+        "details": {
+            "usage": "He utilizado Lightning Web Components para desarrollar interfaces y funcionalidades personalizadas dentro de Salesforce.",
+            "highlights": [
+                "Desarrollo de componentes",
+                "Construcción de interfaces",
+                "Comunicación entre componentes",
+                "Integración con Salesforce"
+            ],
+            "note": "Me permite combinar conceptos web modernos con el ecosistema Salesforce."
+        }
+    },
+
+    "mysql": {
+        "name": "MySQL",
+        "category": "technology",
+        "shortDescription": "Sistema gestor de bases de datos relacionales.",
+        "details": {
+            "usage": "He utilizado MySQL para trabajar con bases de datos relacionales y gestionar información mediante consultas SQL.",
+            "highlights": [
+                "Diseño de bases de datos",
+                "Consultas SQL",
+                "Manipulación de datos",
+                "Relaciones entre tablas"
+            ],
+            "note": "Me permitió trabajar con información estructurada y comprender mejor el manejo de datos."
+        }
+    },
+
+    "php": {
+        "name": "PHP",
+        "category": "technology",
+        "shortDescription": "Lenguaje utilizado para desarrollar aplicaciones web del lado del servidor.",
+        "details": {
+            "usage": "He utilizado PHP para desarrollar funcionalidades del lado del servidor y aplicaciones web.",
+            "highlights": [
+                "Desarrollo backend",
+                "Procesamiento de información",
+                "Integración con bases de datos",
+                "Desarrollo de aplicaciones web"
+            ],
+            "note": "Me permitió conocer el funcionamiento de aplicaciones web desde el lado del servidor."
+        }
+    },
+
+    "python": {
+        "name": "Python",
+        "category": "technology",
+        "shortDescription": "Lenguaje de programación utilizado para desarrollar soluciones y automatizaciones.",
+        "details": {
+            "usage": "He utilizado Python para desarrollar soluciones, automatizar tareas y trabajar con lógica de programación.",
+            "highlights": [
+                "Automatización",
+                "Desarrollo de scripts",
+                "Manipulación de datos",
+                "Implementación de lógica"
+            ],
+            "note": "Su flexibilidad lo convierte en una herramienta muy útil para experimentar y resolver problemas."
+        }
+    },
+
+    "salesforce": {
+        "name": "Salesforce",
+        "category": "technology",
+        "shortDescription": "Plataforma CRM utilizada para desarrollar y personalizar soluciones empresariales.",
+        "details": {
+            "usage": "He trabajado con Salesforce para desarrollar, configurar y personalizar soluciones de acuerdo con necesidades del negocio.",
+            "highlights": [
+                "Desarrollo de soluciones",
+                "Configuración de procesos",
+                "Personalización de la plataforma",
+                "Automatización"
+            ],
+            "note": "Es el ecosistema en el que he desarrollado gran parte de mi experiencia profesional."
+        }
+    },
+
+    "salesforcecli": {
+        "name": "Salesforce CLI",
+        "category": "technology",
+        "shortDescription": "Herramienta de línea de comandos para trabajar con proyectos Salesforce.",
+        "details": {
+            "usage": "He utilizado Salesforce CLI para trabajar con proyectos, organizaciones y despliegues dentro del ecosistema Salesforce.",
+            "highlights": [
+                "Gestión de proyectos",
+                "Despliegue de metadata",
+                "Trabajo con organizaciones",
+                "Automatización mediante comandos"
+            ],
+            "note": "Facilita llevar el desarrollo de Salesforce a un flujo de trabajo más cercano al desarrollo tradicional."
+        }
+    },
+
+    "soql": {
+        "name": "SOQL",
+        "category": "technology",
+        "shortDescription": "Lenguaje de consulta utilizado para recuperar información en Salesforce.",
+        "details": {
+            "usage": "He utilizado SOQL para consultar y recuperar información almacenada en Salesforce.",
+            "highlights": [
+                "Consulta de registros",
+                "Filtrado de información",
+                "Relaciones entre objetos",
+                "Optimización de consultas"
+            ],
+            "note": "Es una herramienta esencial para trabajar con datos dentro de Salesforce."
+        }
+    },
+
+    "sqlserver": {
+        "name": "SQL Server",
+        "category": "technology",
+        "shortDescription": "Sistema gestor de bases de datos relacionales de Microsoft.",
+        "details": {
+            "usage": "He utilizado SQL Server para trabajar con bases de datos relacionales y realizar consultas y operaciones sobre información.",
+            "highlights": [
+                "Consultas SQL",
+                "Gestión de bases de datos",
+                "Manipulación de información",
+                "Relaciones entre tablas"
+            ],
+            "note": "Me permitió fortalecer mis conocimientos sobre bases de datos y manejo de información."
+        }
+    },
+
+    "sqlite": {
+        "name": "SQLite",
+        "category": "technology",
+        "shortDescription": "Motor de base de datos relacional ligero y embebido.",
+        "details": {
+            "usage": "He utilizado SQLite en aplicaciones que requieren almacenamiento local y ligero de información.",
+            "highlights": [
+                "Bases de datos locales",
+                "Consultas SQL",
+                "Almacenamiento estructurado",
+                "Integración con aplicaciones"
+            ],
+            "note": "Es una alternativa práctica cuando no se necesita un servidor de base de datos completo."
+        }
+    },
+
+    "windowsserver": {
+        "name": "Windows Server",
+        "category": "technology",
+        "shortDescription": "Sistema operativo de servidor utilizado para administrar servicios y recursos.",
+        "details": {
+            "usage": "He utilizado Windows Server para trabajar con servicios y administración de entornos basados en Windows.",
+            "highlights": [
+                "Administración de servidores",
+                "Configuración de servicios",
+                "Gestión de recursos",
+                "Administración de entornos"
+            ],
+            "note": "Me permitió conocer una parte diferente de la infraestructura que soporta las aplicaciones."
+        }
+    },
+
+    "xamarin": {
+        "name": "Xamarin",
+        "category": "technology",
+        "shortDescription": "Framework utilizado para desarrollar aplicaciones móviles multiplataforma.",
+        "details": {
+            "usage": "He utilizado Xamarin para desarrollar aplicaciones móviles multiplataforma.",
+            "highlights": [
+                "Desarrollo móvil",
+                "Aplicaciones multiplataforma",
+                "Reutilización de código",
+                "Integración con funcionalidades móviles"
+            ],
+            "note": "Fue parte de mi experiencia inicial desarrollando aplicaciones móviles."
+        }
+    }
+}

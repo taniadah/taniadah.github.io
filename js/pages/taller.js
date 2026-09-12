@@ -14,8 +14,11 @@
 import {
     TECHNOLOGIES_PER_PAGE,
     COMPANIES_ICONS,
-    TECHNOLOGY_ICONS
+    TECHNOLOGY_ICONS,
+    TOOLS_ICONS,
+    VISIBLE_TOOLS
 } from "../constants/constanst_taller.js";
+
 
 const companies = document.querySelectorAll(".trajectory-company");
 const experienceView = document.querySelector(".experience-view");
@@ -34,11 +37,16 @@ const experienceBack = document.getElementById("experience-back");
 const previousExperience = document.getElementById("previous-experience");
 const nextExperience = document.getElementById("next-experience");
 const paginationCurrent = document.getElementById("pagination-current");
+const workshopTools = document.querySelector(".toolsView"); 
+const toolsGrid = document.getElementById("toolsGrid");
+const toolsView = document.querySelector(".tools-view");
 let currentTechnologyPage = 0;
 let technologyPages = [];
 let currentExperienceIndex = 0;
 let experienceKeys = [];
 let experiencesData = {};
+let toolsData = {};
+let toolsKeys = [];
 
 fetch("../../data/experiences.json")
     .then(response => response.json())
@@ -56,6 +64,14 @@ fetch("../../data/experiences.json")
                   selectExperience(company.dataset.company, experiences);
             });
         });
+    });
+
+fetch("../../data/tools_data.json") 
+    .then(response => response.json())
+    .then(tools => {       
+        toolsData = tools;
+        toolsKeys = Object.keys(tools);
+        renderTools(VISIBLE_TOOLS);
     });
 
 technologyPrevious.addEventListener("click", () => {
@@ -138,7 +154,6 @@ function fillExperience(companyData, compName) {
     companyPeriod.textContent = companyData.period;
     aboutContent.textContent = companyData.about;
     grownContent.textContent = companyData.learning;
-    console.log( COMPANIES_ICONS.get(compName));
     companyIconCard.src = COMPANIES_ICONS.get(compName);
     rolesContent.innerHTML = "";
     companyData.roles.forEach(role => {
@@ -282,4 +297,34 @@ function highlightTimeline(companyKey) {
 function updatePagination(position) {
     paginationCurrent.textContent =
         `${position}/${experienceKeys.length}`;
+}
+
+
+function renderTools(limit) {
+    toolsGrid.innerHTML = "";
+    toolsKeys.slice(0, limit).forEach(toolId => {
+        const tool = toolsData[toolId];
+        const button = document.createElement("button");
+        button.classList.add("tool-button");       
+        button.innerHTML = `
+            <span class="tool-slot">
+                <img 
+                    src="${TOOLS_ICONS.get(toolId)}"
+                    alt="${tool.name}"
+                >
+            </span>
+            <span class="tool-name">${tool.name}</span>
+        `;
+        button.addEventListener("click", () => {
+           openTool(tool);
+        });
+        toolsGrid.appendChild(button);
+    });
+}
+
+
+function openTool(tool){
+   /* workshop.classList.add("zooming");
+    toolsView.hidden = false;*/
+    
 }

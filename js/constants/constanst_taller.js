@@ -10,6 +10,7 @@
  * @author Tania Del Angel
  */
 export const TECHNOLOGIES_PER_PAGE = 4;
+export const VISIBLE_TOOLS = 6;
 export const COMPANIES_ICONS = new Map([
   ["rica", "../../assets/icons/coca_icon.png"],
   ["bluetab", "../../assets/icons/bluetab_exp.png"],
@@ -36,4 +37,28 @@ export const TECHNOLOGY_ICONS = new Map([
     ["SQLite", "../../assets/icons/soql_card.png"],
     ["Windows Server", "../../assets/icons/ws_card.png"],
     ["Xamarin", "../../assets/icons/xamarin_card.png"],
+]);
+
+export const TOOLS_ICONS = new Map([
+    ["apex", "../../assets/icons/apex_cozy.png"],
+    ["aura", "../../assets/icons/aura_cozy.png"],
+    ["csharp", "../../assets/icons/csharp_cozy.png"],
+    ["css", "../../assets/icons/css_cozy.png"],
+    ["flows", "../../assets/icons/flows_cozy.png"],
+    ["git", "../../assets/icons/git_cozy.png"],
+    ["html", "../../assets/icons/html_cozy.png"],
+    ["java", "../../assets/icons/java_cozy.png"],
+    ["javaScript", "../../assets/icons/js_cozy.png"],
+    ["jira","../../assets/icons/jira_cozy.png"],
+    ["lwc", "../../assets/icons/lwc_cozy.png"],
+    ["mysql", "../../assets/icons/mysql_cozy.png"],
+    ["php", "../../assets/icons/php_cozy.png"],
+    ["python", "../../assets/icons/python_cozy.png"],
+    ["salesforce", "../../assets/icons/salesforce_cozy.png"],
+    ["salesforcecli", "../../assets/icons/cli_cozy.png"],
+    ["soql", "../../assets/icons/soql_cozy.png"],
+    ["sqlserver", "../../assets/icons/sqlserver_cozy.png"],
+    ["sqlite", "../../assets/icons/soql_cozy.png"],
+    ["windowsserver", "../../assets/icons/ws_cozy.png"],
+    ["xamarin", "../../assets/icons/xamarin_cozy.png"],
 ]);
